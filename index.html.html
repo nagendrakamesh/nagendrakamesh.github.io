@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Profile Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <style>
+        #profile{
+            padding: 1rem;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 2rem !important;
+            
+        }
+        .pad{
+            margin: 1rem !important;
+            
+        }
+        .navline {
+        border: none;
+        height: 20px;
+        width: auto;
+        height: 50px;
+        margin-top: 0;
+        border-bottom: 2px solid #1f1209;
+        box-shadow: 0 20px 20px -20px #333;
+        margin: -50px auto 10px; 
+        }
+        #navtext{
+            margin: 0.75rem;
+        }
+        table,tr,th,td{
+            border: 3px solid;
+            text-align: center;
+            border-collapse: collapse;
+            padding: 2px;
+        }
+        #tableheadings{
+            background-color:aqua;
+            height: 50px;
+        }
+        .bullets{
+            font-size: 150%;
+        }
+        .hover:hover{
+            text-decoration: none;
+            color: tomato;
+        }
+        .mail{
+            text-decoration: none;
+            color: black;
+        }
+        .mail:hover{
+            color: tomato !important;
+            
+        }
+        /* body { padding-top: 70px; } */
+        
+    </style>
+  </head>
+  <body>
+
+    <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid" id="navtext">
+          <a class="navbar-brand" href="18Nov2022.html"><svg xmlns="http://www.w3.org/2000/svg" width="27" height="30" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 27 25">
+            <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"/>
+            <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"/>
+          </svg>About</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#sec2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list-ul" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                </svg>Academics</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sec3"><i class="bi bi-list-ul"></i><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list-ul" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                </svg>Technical Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sec4"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="25" fill="currentColor" class="bi bi-info-lg" viewBox="0 0 16 25">
+                  <path d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704l1.323-6.208Zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0Z"/>
+                </svg>Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sec5"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone" viewBox="0 0 20 20">
+                  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                </svg>Contact Me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+        <div class="pad" id="sec1">
+        <img src="profilepic.jpg" class="img-fluid" align="right" alt="Image" height="330vh" width="330vw" id="profile">
+        <br>
+        <h1 class="text">Nagendra Kamesh M.S.</h1>
+        <h4><a href="mailto: nagendrakamesh@gmail.com" class="hover mail">nagendrakamesh@gmail.com</a></h4>
+        <br>
+        <hr class="navline">
+        <br>
+        <h4><b>Career Objectives</b></h4>
+        <h5><p align="justify">Seeking a responsible career opportunity in the field of Computer Science where I can utilize my logical and technical skills towards personal and professional development and lead to wonderful innovations</p></h5>
+        </div>
+        <br><br>
+
+        <div  id="sec2" class="pad">
+        <h1>Academic Information</h1>
+        <br>
+        <table class="table">
+        <tr id="tableheadings">
+            <th><b>Course Details</b></th>
+            <th><b>Institution</b></th>
+            <th><b>University</b></th>
+            <th><b>Year of passing</b></th>
+            <th><b>CGPA</b></th>
+        </tr>
+        <tr>
+            <td>Bachelor of Technology (Computer Science)</td>
+            <td>Keshav Memorial Institute of Technology</td>
+            <td>JNTUH</td>
+            <td>2025</td>
+            <td>8.53</td>
+        <!-- </tr> -->
+        <tr>
+            <td>Intermediate-MPC</td>
+            <td>Gowtham Junior College</td>
+            <td>TSBIE</td>
+            <td>2021</td>
+            <td>9.57</td>
+        </tr>
+        <tr>
+            <td>Secondary School Education</td>
+            <td>D.A.V Public School</td>
+            <td>CBSE</td>
+            <td>2019</td>
+            <td>9.85</td>
+        </tr>
+
+        </table>
+        </div>
+        <br>
+
+        <div  id="sec3" class="pad">
+            <h1>Technical Skills</h1>
+            <h3><b>Programming Languages</b></h3>
+            <ol type="none">
+            <ul type="disc" class="bullets">
+                <li>C</li>
+                <li>C++</li>
+                <li>Java</li>
+                <li>Python</li>
+            </ul>
+        </ol>
+        <h3><b>Web Technologies</b></h3>
+            <ol type="none">
+            <ul type="disc" class="bullets">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Bootstrap</li>
+            </ul>
+        </ol>
+        </div>
+        <br>
+
+        <div id="sec4" class="pad">
+            <h1>Projects</h1>
+            <ul>
+            <li><h3><b> World Population Analysis :</b></h3>
+            <h4>To visit the project <a href="https://colab.research.google.com/github/nagendrakamesh/MyProjects/blob/main/World_Population.ipynb" target="_blank" class="hover">click here</a></h4>
+            <h4><p align="justify">The project is made using python and it's libraries such as numpy, pandas, matplotlib, seabporn and sklearn.
+              It analysizes the growth of world population, population comparision between any two of the countries and prediction of the population growth in future with graphical visualization.
+            </p></h4>
+          </li>
+          </ul>
+          </div>
+          <br>
+          <div id="sec5" class="pad">
+            <h1>I'd love to hear from you!</h1>
+            <h4><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 20 20">
+              <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z"/>
+              <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"/>
+            </svg> : <a href="mailto: nagendrakamesh@gmail.com" class="hover mail">nagendrakamesh@gmail.com</a></h4>
+            <h4><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+            </svg> : +91-987654321</h4>
+            <h4><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-pin-map-fill" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8l3-4z"/>
+              <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"/>
+            </svg> : <a href="https://www.google.com/maps/place/Keshav+Memorial+Institute+of+Technology/@17.3971519,78.4880457,17z/data=!3m1!4b1!4m5!3m4!1s0x3bcb99c44533324f:0x8aa5456a7d836bb5!8m2!3d17.3971519!4d78.4902344" class="hover mail" target="_blank">Keshav Memorial Institute of Technology</a></h4>
+          </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>
